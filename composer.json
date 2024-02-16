@@ -1,0 +1,21 @@
+{
+    "name": "plasticground/phonenumber",
+    "description": "Application for the check a phone numbers",
+    "type": "project",
+    "require": {
+        "php": "^8.1",
+        "brick/phonenumber": "^0.6.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Plasticground\\Phonenumber\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Plasticground",
+            "email": "plasticground@yandex.ru"
+        }
+    ]
+}
