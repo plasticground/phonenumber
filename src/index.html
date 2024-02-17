@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phonenumber</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+</head>
+<body class="hero is-fullheight">
+<section class="section">
+    <div class="container">
+        <h1 class="title">Phonenumber</h1>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="block">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <form action="/" method="GET">
+                        <div class="field has-addons">
+                            <div class="control is-expanded">
+                                <input name="phone"
+                                       class="input is-fullwidth"
+                                       type="text"
+                                       placeholder="+1 (987) 555-1234"
+                                       value="%phone%"
+                                       required
+                                >
+                            </div>
+                            <div class="control">
+                                <button type="submit" class="button is-link">
+                                    Check
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="block" style="display: %error_display%;">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <p class="has-text-danger">%invalid_format%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="block" style="display: %result_display%;">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <table class="table is-hoverable is-fullwidth">
+                        <tbody>
+                            <tr>
+                                <td>Valid</td>
+                                <td>%is_valid_number%</td>
+                            </tr>
+                            <tr>
+                                <td>Possible</td>
+                                <td>%is_possible_number%</td>
+                            </tr>
+                            <tr>
+                                <td>Country code</td>
+                                <td>%country_code%</td>
+                            </tr>
+                            <tr>
+                                <td>National number</td>
+                                <td>%national_number%</td>
+                            </tr>
+                            <tr>
+                                <td>Description</td>
+                                <td>%description%</td>
+                            </tr>
+                            <tr>
+                                <td>Region code</td>
+                                <td>%region_code%</td>
+                            </tr>
+                            <tr>
+                                <td>Geographical code</td>
+                                <td>%geographical_code%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="content">
+        <a href="https://github.com/plasticground/phonenumber" target="_blank" class="link is-info">
+            <div class="tags is-justify-content-center has-addons">
+                <span class="tag is-dark"><img src="img/github-mark-white.svg" alt="GitHub" style="height: 1rem;"></span>
+                <span class="tag is-link">Plasticground</span>
+            </div>
+        </a>
+    </div>
+</footer>
+</body>
+</html>
